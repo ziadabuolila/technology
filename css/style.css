@@ -150,6 +150,9 @@ header > ul > li > a:hover{
     .gallery img {
         width: 100% !important;
     }
+    .confer img {
+        width: 100% !important;
+    }
     .technology, .ziad {
         width: 59% !important;
     }
