@@ -157,6 +157,14 @@ header > ul > li > a:hover{
         margin-right: -50px !important;
     }
 }
+@media (max-width: 375px) {
+    .h2 {
+        margin-top: -90px !important;
+    }
+    .typing-container {
+        margin-top: 75px !important;
+    }
+}
 .menu {
     position: fixed;
     right: -290px;
