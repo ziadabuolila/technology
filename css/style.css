@@ -47,6 +47,21 @@ body{
     width: 140px;
     position: absolute;
 }
+.img-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -180px;
+    z-index: 9999;
+}
+.img-loader img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain; 
+}
+.technolog{
+    margin-right: -35px;
+}
 @keyframes techhnology {
     0% {
         transform: rotate(0deg);
