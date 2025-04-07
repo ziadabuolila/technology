@@ -52,7 +52,7 @@ btn.addEventListener("click", () => {
 // gallery
 const gallery = document.querySelector('.gallery');
 
-for (let i = 1; i <= 50; i++) {
+for (let i = 1; i <= 9; i++) {
     gallery.innerHTML += `
         <img src="img/photo/${i}.jpg" alt="Image ${i}">
     `;
@@ -60,7 +60,7 @@ for (let i = 1; i <= 50; i++) {
 // confer
 const confer = document.querySelector('.confer');
 
-for (let i = 1; i <= 9; i++) {
+for (let i = 1; i <= 4; i++) {
     confer.innerHTML += `
         <img src="img/conference/${i}.jpg" alt="Image ${i}">
     `;
