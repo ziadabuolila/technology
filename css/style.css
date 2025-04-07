@@ -363,7 +363,7 @@ button:focus {
         width: 0;
     }
     to {
-        width: 27.5ch;
+        width: 325px;
     }
 }
 @keyframes blink {
