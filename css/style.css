@@ -65,6 +65,17 @@ header{
     position: fixed;
     z-index: 9999;
     width: 97%;
+    animation: fadeInDown 1s ease-in-out;
+}
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 .logo > img{
     width: 60px;
@@ -123,6 +134,9 @@ header > ul > li > a:hover{
     cursor: pointer;
     display: none;
 }
+button:focus {
+    outline: none !important;
+}
 @media (max-width: 1300px){
     .menu-btn{
         display: block;
@@ -136,12 +150,12 @@ header > ul > li > a:hover{
         width: 90% !important;
     }
     .typing-container {
-        font-size: 20px !important;
+        font-size: 22px !important;
         margin-bottom: 100px;
     }
     .social-links {
         display: flex !important;
-        gap: 40px !important;
+        gap: 30px !important;
         justify-content: center !important;
     }
     .h2 {
@@ -164,8 +178,16 @@ header > ul > li > a:hover{
     .h2 {
         margin-top: -90px !important;
     }
-    .typing-container {
-        margin-top: 75px !important;
+}
+@media (max-width: 430px) {
+    header {
+        width: 91% !important;
+    }
+    .gallery img {
+        width: 100% !important;
+    }
+    .confer img {
+        width: 100% !important;
     }
 }
 .menu {
@@ -269,19 +291,19 @@ header > ul > li > a:hover{
 }
 .typing-container {
     width: 100%;
-    font-size: 55px;
+    font-size: 26px;
     white-space: nowrap;
     overflow: hidden;
     border-left: 6px solid #000;
     animation: typing 3s steps(22) forwards, blink 0.7s infinite;
-    margin-top: 170px;
+    margin-top: 80px;
 }
 @keyframes typing {
     from {
         width: 0;
     }
     to {
-        width: 29ch;
+        width: 27ch;
     }
 }
 @keyframes blink {
@@ -343,7 +365,7 @@ h2 {
 }
 .h2{
     color: #00ffff;
-    margin-top: -170px;
+    margin-top: -280px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -548,7 +570,6 @@ p {
     opacity: 0.9;
     transition: opacity 0.3s ease;
     font-weight: bold;
-        text-shadow: 20px 0px 17px;
 }
 @media (max-width: 768px) {
     .container {
