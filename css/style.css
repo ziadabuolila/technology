@@ -402,7 +402,7 @@ button {
 }
 button:hover {
     background: linear-gradient(45deg, #3f09ee, #0f2027);
-    transform: scale(1.05);
+    transform: scale(1.05) rotate(360deg);
     box-shadow: 0 12px 20px rgb(8 50 80 / 90%);
 }
 button:active {
