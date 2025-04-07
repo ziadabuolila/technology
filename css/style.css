@@ -362,6 +362,11 @@ button:focus {
         width: 0;
     }
 }
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
 button > a{
     text-decoration: none;
     color: #fff;
