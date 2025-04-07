@@ -340,14 +340,13 @@ button:focus {
     justify-content: center;
     display: flex;
     align-items: center;
-/*     justify-content: right; */
+    justify-content: right;
 }
 .typing-container > span{
     display: block;
     color: #000;
     width: 6px;
     background: #000;
-    margin-right: 5px;
     animation: typing-spacing .3s infinite alternate;
 }
 @keyframes typing-spacing {
