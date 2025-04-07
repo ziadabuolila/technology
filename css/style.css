@@ -151,7 +151,7 @@ button:focus {
     }
     .typing-container {
         font-size: 22px !important;
-        margin-bottom: 100px;
+        /* margin-bottom: 100px; */
     }
     .social-links {
         display: flex !important;
@@ -190,6 +190,10 @@ button:focus {
         width: 100% !important;
     }
 }
+.close-btn {
+    font-size: 30px;
+    cursor: pointer;
+}
 .menu {
     position: fixed;
     right: -290px;
@@ -204,7 +208,6 @@ button:focus {
     gap: 20px;
     box-shadow: -4px 0 20px rgba(0, 0, 0, 0.3);
     z-index: 99999;
-    display: none;
     transition: transform 0.3s ease-in-out;
     transform: translateX(-100%);
     overflow-y: scroll;
@@ -289,21 +292,63 @@ button:focus {
         transform: translateY(0);
     }
 }
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+.text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.text-container > .name{
+    display: flex;
+    margin-bottom: 35px;
+}
 .typing-container {
     width: 100%;
-    font-size: 26px;
+    font-size: 23px;
     white-space: nowrap;
     overflow: hidden;
     border-left: 6px solid #000;
-    animation: typing 3s steps(22) forwards, blink 0.7s infinite;
+    animation: typing 3s steps(22) forwards, blink 0.7s infinite; 
     margin-top: 80px;
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.typing-container > span{
+    display: block;
+    color: #000;
+    width: 6px;
+    background: #000;
+    margin-right: 5px;
+    animation: typing-spacing .3s infinite alternate;
+}
+@keyframes typing-spacing {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 @keyframes typing {
     from {
         width: 0;
     }
     to {
-        width: 27ch;
+        width: 27.5ch;
     }
 }
 @keyframes blink {
@@ -357,7 +402,7 @@ h1, h2{
 }
 h2 {
     color: #00ffff;
-    margin-top: -55px;
+    /* margin-top: -55px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -365,7 +410,7 @@ h2 {
 }
 .h2{
     color: #00ffff;
-    margin-top: -280px;
+    /* margin-top: -280px; */
     display: flex;
     align-items: center;
     justify-content: center;
