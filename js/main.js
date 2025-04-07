@@ -52,7 +52,7 @@ btn.addEventListener("click", () => {
 // gallery
 const gallery = document.querySelector('.gallery');
 
-for (let i = 1; i <= 25; i++) {
+for (let i = 1; i <= 50; i++) {
     gallery.innerHTML += `
         <img src="img/photo/${i}.jpg" alt="Image ${i}">
     `;
