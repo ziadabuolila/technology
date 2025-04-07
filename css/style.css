@@ -362,14 +362,6 @@ button:focus {
     from {
         width: 0;
     }
-    to {
-        width: fit-content;
-    }
-}
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
 }
 button > a{
     text-decoration: none;
