@@ -80,7 +80,7 @@ header{
     position: fixed;
     z-index: 9999;
     width: 97%;
-    animation: fadeInDown 1s ease-in-out;
+    animation: fadeInDown 3s ease-in-out;
 }
 @keyframes fadeInDown {
     from {
