@@ -340,7 +340,7 @@ button:focus {
     justify-content: center;
     display: flex;
     align-items: center;
-    justify-content: right;
+/*     justify-content: right; */
 }
 .typing-container > span{
     display: block;
