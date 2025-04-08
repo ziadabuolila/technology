@@ -230,6 +230,18 @@ button:focus {
 #menu.open {
     right: 0;
 }
+#menu.d-none + .overlay {
+    display: none;
+}
+#menu + .overlay{
+    display: block;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: hsl(0deg 0% 0% / 70%);
+    z-index: 99;
+    top: 0;
+}
 .menu.active {
     right: 0;
     opacity: 1;
