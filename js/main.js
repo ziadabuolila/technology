@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
     document.addEventListener("click", (e) => {
-        if (!menu.contains(e.target) && e.target !== openMenuButton) {
+        if (!menu.contains(e.target) && e.target !== openMenuButton && e.target !== openMenuButton.querySelector("i") && e.target !== openMenuButton.querySelector("svg")){
             menu.classList.add("d-none");
         }
     });
